@@ -34,13 +34,16 @@ public class HotelMangementRepo {
     public String addHotel(Hotel hotel) {
 
         if(hotel==null) return "FAILURE";
+        String hotelName=hotel.getHotelName();
+
+        if(hotelName==null) return "FAILURE";
 
 //        if(hotel.getHotelName()==null) return "FAILURE";
 //
 //
 //
 //
-//        if(hotelList.containsKey(hotel.getHotelName())) return "FAILURE";
+        if(hotelList.containsKey(hotel.getHotelName())) return "FAILURE";
 
         hotelList.put(hotel.getHotelName(),hotel);
 
