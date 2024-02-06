@@ -35,12 +35,12 @@ public class HotelMangementRepo {
 
         if(hotel==null) return "FAILURE";
 
-        if(hotel.getHotelName().isEmpty()) return "FAILURE";
-
-
-
-
-        if(hotelList.containsKey(hotel.getHotelName())) return "FAILURE";
+//        if(hotel.getHotelName()==null) return "FAILURE";
+//
+//
+//
+//
+//        if(hotelList.containsKey(hotel.getHotelName())) return "FAILURE";
 
         hotelList.put(hotel.getHotelName(),hotel);
 
