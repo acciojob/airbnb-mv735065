@@ -23,6 +23,14 @@ public class HotelMangementRepo {
 
     Map<String,Booking> bookingList;
 
+    public HotelMangementRepo(Map<String, Hotel> hotelList, Map<Integer, User> userList, Map<String, Booking> bookingList) {
+        this.hotelList = hotelList;
+        this.userList = userList;
+        this.bookingList = bookingList;
+    }
+
+    public HotelMangementRepo() {
+    }
 
     public String addHotel(Hotel hotel) {
 
